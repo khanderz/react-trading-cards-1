@@ -50,6 +50,44 @@ const tradingCardData = [
   }
 ];
 
+function TradingCardContainer() {
+  const tradingCards = [];
+
+  for (const currentCard of tradingCardData) {
+    tradingCards.push(
+      <TradingCard
+        name={currentCard.name}
+        skill={currentCard.skill}
+        imgUrl={currentCard.imgUrl}
+      />
+    );
+  }
+
+  return (
+    <React.Fragment>
+      {tradingCards}
+    </React.Fragment>
+  );
+}
+
+ReactDOM.render(
+  <TradingCardContainer />,
+  document.querySelector('#container')
+);
+
+// define TradingCard component
+   // render one trading card
+
+// define TradingCardContainer component
+
+  // loop over each data point
+  // and make a TradingCard component
+  // return all those TradingCard's we made
+
+
+// mount just ONE thing onto the page:
+// one TradingCardContainer component
+
 function TradingCard(props) {
   return (
     <div className="card">
