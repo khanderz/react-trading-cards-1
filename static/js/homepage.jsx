@@ -3,7 +3,12 @@
 function Homepage() {
   return (
     <div>
-      This component needs to be implemented.
+      <p>Hello user</p>
+
+      <p><a href="/cards">Cards</a> </p>
+
+      <p><img src="/static/img/balloonicorn.jpg"></img> </p>
+
     </div>
   );
 }
